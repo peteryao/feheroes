@@ -1,4 +1,5 @@
 import { FeheroSimulatorPage } from './app.po';
+import { browser } from 'protractor';
 
 describe('fehero-simulator App', () => {
   let page: FeheroSimulatorPage;
@@ -9,6 +10,6 @@ describe('fehero-simulator App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('fe works!');
+    expect(page.getParagraphText()).toEqual('Fire Emblem Heroes Simulator');
   });
 });
